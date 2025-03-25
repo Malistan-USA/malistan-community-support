@@ -1,0 +1,406 @@
+/* Base Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("./malistan1.jpg") center/cover no-repeat fixed;
+}
+
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#login-container {
+  margin: 0 auto;
+  max-height: max-content;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Consent Agreement Styles */
+.consent-agreement {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.consent-agreement h2 {
+  margin-bottom: 15px;
+  color: #2a5885;
+}
+
+.consent-text {
+  max-height: max-content;
+  overflow-y: auto;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Button Styles */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  padding: 8px 15px;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Table Styles */
+.data-table,
+.zoom-participants {
+  margin-top: 30px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #7b8fa4;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Zoom Controls */
+.zoom-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.zoom-controls input {
+  flex: 1;
+}
+
+.zoom-controls button {
+  width: auto;
+  flex: 0 0 150px;
+  margin: 0;
+}
+
+#sendAllBtn {
+  background-color: #2ecc71;
+}
+
+#sendAllBtn:hover {
+  background-color: #27ae60;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 8px 12px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  display: inline-block;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #cccccc;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Edit Form Styles */
+.edit-form {
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #d0e3ff;
+}
+
+.edit-form h3 {
+  margin-top: 0;
+  color: #2a5885;
+}
+
+/* Links */
+.email-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Role-based Visibility */
+.admin-only {
+  display: none;
+}
+
+.role-admin .admin-only {
+  display: block;
+}
+/*bg screen styles */
+@media (min-width: 1000px) {
+  .container {
+    padding: 20px;
+    max-width: 1000px;
+  }
+}
+/* Mobile Styles */
+@media (max-width: 932px) and (min-width: 400px) {
+  body {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+  .container {
+    padding: 10px;
+  }
+  #login-container {
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+
+  .zoom-controls {
+    flex-direction: column;
+  }
+
+  .zoom-controls button {
+    width: 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 40%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  #dataTable td:nth-of-type(1):before {
+    content: "Full Name";
+  }
+  #dataTable td:nth-of-type(2):before {
+    content: "Phone";
+  }
+  #dataTable td:nth-of-type(3):before {
+    content: "Email";
+  }
+  #dataTable td:nth-of-type(4):before {
+    content: "Residency";
+  }
+  #dataTable td:nth-of-type(5):before {
+    content: "Career";
+  }
+  #dataTable td:nth-of-type(6):before {
+    content: "Actions";
+  }
+
+  #zoomTable td:nth-of-type(1):before {
+    content: "Name";
+  }
+  #zoomTable td:nth-of-type(2):before {
+    content: "Email";
+  }
+  #zoomTable td:nth-of-type(3):before {
+    content: "Actions";
+  }
+
+  .action-btn {
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 400px) {
+  td {
+    padding-left: 45%;
+  }
+
+  td:before {
+    width: 40%;
+  }
+
+  .action-btn {
+    width: 100%;
+    margin: 2px 0;
+  }
+}
